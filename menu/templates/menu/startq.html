@@ -1,20 +1,55 @@
 {% extends "layout/basic.html" %}
-
 {% block content %}
-<a href=" {% url 'menu' %}">Back to the Menu</a>
-
-<form method="post" action=''>
-
+       <h1>Quiz App</h1>
+    <hr>
+<div class="form">
+<form method='post' action=''>
     {% csrf_token %}
-<p><header>Questions: </header></p>
-{% for q in questions %}
-    <div>
-        <p>{{q.question}}</p>
-        <p><input  type="radio"  value="True"> True</p>
-        <p><input  type="radio"  value="False"> False</p>
+
+    <div class="form-group">
+      <p for="question">{{ question1 }}</p>
     </div>
-{% endfor %}
-<input type="submit" value="Save my answers">
+
+    <div class="form-check">
+        <div class="form-check">
+            <input  type="radio" name="1" value="True" >
+                True
+            <input  type="radio" name="1" value="False">
+                False <br>
+        </div>
+    </div>        <br>
+
+
+      <div class="form-group">
+      <p for="question">{{ question2 }}</p>
+    </div>
+
+    <div class="form-check">
+        <div class="form-check">
+            <input  type="radio" name="2"  value="True" >
+                True
+            <input  type="radio" name="2"  value="False">
+                False <br>
+        </div>
+        </div>     <br>
+
+
+      <div class="form-group">
+      <p for="question">{{ question3 }}</p>
+    </div>
+
+       <div class="form-check">
+        <div class="form-check">
+            <input  type="radio" name="3"  value="True" >
+                True
+            <input  type="radio" name="3"  value="False">
+                False <br>
+        </div>
+        </div>     <br>
+
+
+
+    <p><input type="submit" class="btn" value="Submit" ></p>
 </form>
-<input type="submit" value="Save my answers">
+    </div>
 {% endblock %}

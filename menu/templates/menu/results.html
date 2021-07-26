@@ -1,5 +1,13 @@
 {% extends "layout/basic.html" %}
 
 {% block content %}
-<p>LOS</p>
+<a href=" {% url 'menu' %}">Back to the Menu</a>
+{% if count == 3 %}
+    <H1>You win</H1>
+    <p>You give True answer at all questions</p>
+{% endif %}
+{% if count < 3 %}
+    <H1>You lose</H1>
+    <p>You choose correct answer at {{count}} quetions</p>
+{% endif %}
 {% endblock %}
