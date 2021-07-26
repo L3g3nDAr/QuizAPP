@@ -1,6 +1,8 @@
 {% extends "layout/basic.html" %}
 {% block title %}Добавление объявления {% endblock %}
 {% block content %}
+{% if user.is_authenticated %}
+{% endif %}
     <a href="{% url 'menu' %}">Menu</a>
     <h2>Добавление объявления</h2>
     <form method="post">
@@ -8,4 +10,5 @@
     {{ form.as_p }}
     <input type="submit" value="Добавить">
     </form>
+{% endif %}
 {% endblock %}
