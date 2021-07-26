@@ -1,0 +1,20 @@
+{% extends "layout/basic.html" %}
+
+{% block content %}
+<a href=" {% url 'menu' %}">Back to the Menu</a>
+
+<form method="post" action=''>
+
+    {% csrf_token %}
+<p><header>Questions: </header></p>
+{% for q in questions %}
+    <div>
+        <p>{{q.question}}</p>
+        <p><input  type="radio"  value="True"> True</p>
+        <p><input  type="radio"  value="False"> False</p>
+    </div>
+{% endfor %}
+<input type="submit" value="Save my answers">
+</form>
+<input type="submit" value="Save my answers">
+{% endblock %}
