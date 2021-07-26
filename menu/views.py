@@ -34,12 +34,16 @@ def get_question():
 def start_the_quiz(request):
     question1, question2, question3, correct_answer1, correct_answer2, correct_answer3 = get_question()
     count = 0
+    print(request.POST)
+    print(correct_answer1)
+    print(correct_answer2)
+    print(correct_answer3)
     if request.method == 'POST':
-        if request.POST['1'] == correct_answer1:
+        if request.POST['1'] == str(correct_answer1):
             count += 1
-        if request.POST['2'] == correct_answer2:
+        if request.POST['2'] == str(correct_answer2):
             count += 1
-        if request.POST['3'] == correct_answer3:
+        if request.POST['3'] == str(correct_answer3):
             count += 1
         print(count)
         return render(request, 'menu/results.html', {'count': count})
