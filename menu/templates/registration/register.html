@@ -4,12 +4,13 @@
     {% if from.errors %}
     <p>There's something wrong with what you entered!</p>
     {% endif %}
-
+<div class="reg">
     <form method="post" action=" {% url 'register' %}">
         {% csrf_token %}
         {{form}}
-        <p> <input type="submit"  value="Register"> </p>
+        <p> <input type="submit" class="btn"  value="Register"> </p>
         <input type="hidden" name="next" value="{{ next }}">
     </form>
-    <a href=" {% url 'menu' %} "> Back to the menu </a>
+    <a href=" {% url 'menu' %} " > <h2>Menu</h2></a>
+</div>
 {% endblock %}

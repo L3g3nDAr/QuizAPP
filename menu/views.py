@@ -21,7 +21,6 @@ def get_question():
     correct_answer2 = secoundq.answer
     question3 = thirdq.question
     correct_answer3 = thirdq.answer
-
     return question1, \
            question2, \
            question3, \

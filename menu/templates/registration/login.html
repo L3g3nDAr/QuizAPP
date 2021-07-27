@@ -4,14 +4,15 @@
     {% if form.errors %}
     <p>There's something wrong with what you entered!</p>
     {% endif %}
-    <p>Login into account</p>
+<div class="log">
+    <h2>Login into account</h2>
     <form method="post" action=" {% url 'login'%}">
         {% csrf_token %}
         <p> Username: {{ form.username}}</p>
         <p> Password: {{ form.password}}</p>
-
-        <p> <input type="submit"  value="login"> </p>
         <input type="hidden" name="next" value="{{ next }}">
     </form>
-    <a href=" {% url 'menu' %} "> Back to the menu </a>
+    <input type="submit" class="btn" value="Login">
+    <br><a href=" {% url 'menu' %} "><h2>Menu</h2></a>
+</div>
 {% endblock %}

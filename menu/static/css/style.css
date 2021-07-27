@@ -12,6 +12,173 @@ nav a {
     display: block;
     margin: 10px 0px;
 }
-section {
-    margin-left: 170px;
+
+.log p{
+    display: block;
+    background-color: #242628;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+.reg{
+    color: #ffffff;
+    background-color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.8);
+    text-color: #1a1a1a;
+}
+.log{
+    color: #ffffff;
+    background-color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+span {
+color: #ffffff
+}
+
+
+.log .btn{
+  background-color: #1a1a1a;
+  display: inline-block;
+  color: #00E8FF;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  margin-left: 400px
+}
+.form {
+    display: block;
+    background-color: #242628;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
+    margin-left: 400px;
+    margin-right: 400px;
+
+}
+
+.btn{
+  background-color: #1a1a1a;
+  display: inline-block;
+  color: #00E8FF;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+
+}
+.creat p {
+    display: block;
+    background-color: #242628;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+.res p {
+    display: block;
+    background-color: #242628;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+.btn:hover { background: #ffffff;
+ box-shadow: 0 0 1px #FFF, 0 0 3px #FFF,
+        0 0 30px #FFF, 0 0 40px #FFF, 0 0 55px #00E8FF, 2px 2px 2px rgba(255, 255, 255, 0); }
+.btn:active { background: #87c3ff;}
+
+.lox {
+    padding: 15px;
+    font-family: system-ui;
+    text-shadow: 0px 0px 1px rgba(101, 193, 240, 1);
+    color: rgba(255, 255, 255, 1);
+    display: line-block;
+}
+h2 span {
+    animation: animate 1s linear infinite;
+}
+
+h2 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h2 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h2 span:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+h2 span:nth-child(4) {
+    animation-delay: 0.20s;
+}
+h2 span:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+h2 span:nth-child(6) {
+    animation-delay: 0.30s;
+}
+
+h2 span:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    padding: 15px;
+    text-shadow: 0 0 1px #FFF, 0 0 3px #FFF,
+        0 0 30px #00E8FF, 0 0 40px #00E8FF, 0 0 55px #00E8FF, 2px 2px 2px rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+
+    0%,
+    80% {
+        color: #FFFFFF;
+    }
+
+    100% {
+        color: #00E8FF;
+        text-shadow: 0 0 10px #61e6ff,
+            0 0 20px #61e6ff,
+            0 0 40px #61e6ff,
+            0 0 80px #61e6ff,
+            0 0 120px #61e6ff,
+            0 0 160px #61e6ff,
+            0 0 200px #61e6ff,
+            0 0 240px #61e6ff,
+            0 0 300px #61e6ff,
+    }
+}
+.creat {
+    color: #ffffff;
+    background-color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+label {
+    color: #ffffff
+}
+body {
+    height: 120vh;
+    width: 100%;
+    background: url(https://images.hdqwalls.com/download/tengen-toppa-gurren-lagann-4k-1m-2560x1080.jpg) no-repeat center top / cover;
+
 }
