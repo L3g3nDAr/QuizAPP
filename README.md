@@ -1,4 +1,4 @@
-Еhis is an app for passing tests. 
+This is an app for passing tests. 
 For work: 
   Download all files
   Extract the files from the archive
